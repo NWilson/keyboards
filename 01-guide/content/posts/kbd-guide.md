@@ -4,23 +4,25 @@
 Or,
 
 _One beginner speaks to another about keyboards_
+
 </center>
 
 ## Overview & goals
 
 Hello! I'm Nick, and this is my post recording what I learned when I bought myself a new keyboard in 2023.
 
-I am _not_ an "expert" or "enthusiast" — but you see this as an advantage.
+I am _not_ an "expert" or "enthusiast" — but you may see this as an advantage, since my choices potentially better-reflect what another beginner may prefer.
 
-There is so, so much information online about keyboards, with advice of all sorts. What confused me most when I looked for keyboard information, was knowing how to answer these questions:
+There is so, so much information online about keyboards, with advice of all sorts. What confused me most when I looked for keyboard information, was knowing how to answer these sort of questions:
 
-* Just how much do I care about keyboards? Does "keyswitch smoothness" matter? How I do even know where to start? Of course the enthusiasts claim it all matters — but what things _really_ make a difference?
-* How can I make an informed decision? I don't want a resource that says "buy this", but nor did I know how to interpret advice and reviews without any baseline to judge against.
+- Just how much do I care about keyboards? Does "keyswitch smoothness" matter? How I do even know where to start? Of course the enthusiasts claim it all matters — but what things _really_ make a difference?
+- How can I make an informed decision? I don't want a resource that says "buy this", but nor did I know how to interpret advice and reviews without any baseline to judge against.
 
 **This guide:**
-* Says **what** I did, and **why**, and **how it worked out**;
-* Does not necessarily tell you to do the same;
-* But, hopefully saves you time, if you find your thinking matches mine.
+
+- Says **what** I did, and **why**, and **how it worked out**;
+- Does not necessarily tell you to do the same;
+- But, hopefully saves you time, if you find your thinking matches mine.
 
 **My experience level:**
 
@@ -43,9 +45,10 @@ I quickly wanted to upgrade my _Das_ Model S (at my workplace office), and went 
 ## The keyboard itself
 
 Broadly, to buy a keyboard, you need to get:
-* A keyboard
-* Some switches
-* Some keycaps
+
+- A keyboard
+- Some switches
+- Some keycaps
 
 You _can_ get them together, and perhaps that's advisable cost-wise, but you'll get something closer to your preferences if you buy them separately. The cost savings of a pre-built keyboard are not extreme, and the time taken to just plug the switches and keycaps onto the keyboard is really very short (fifteen minutes).
 
@@ -74,13 +77,13 @@ To be totally honest: **many, many keyboards out there are absolutely fine**. Do
 The main factors in a layout are:
 
 - Size
-  * 100% (Full-sized)
-  * 96% / 1800
-  * 80% (TKL)
-  * 75%
-  * 65%
-  * ...others
-- Enter key shape (ISO or ANSI)
+  - 100% (Full-sized)
+  - 96% / 1800
+  - 80% (TKL)
+  - 75%
+  - 65%
+  - ...others
+- 'Enter' key shape (ISO or ANSI)
 - Compactness
 - Ergonomics
 

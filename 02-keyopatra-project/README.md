@@ -69,7 +69,7 @@ goals.)
 > 2. The design must appeal to aesthetics enthusiasts: we cannot compromise on features that are regarded as **bare-minimum requirements for a 75% keyboard**.
 > 3. The design must **not make any terrible ergonomic trade-offs**.
 
-Regarding **finger-to-key assignments**, we believe that there is a large market of people who have learned to touch-type, and are scared to try to re-learn typing. This is evidenced by the vast community buying enthusiast-level TKL keyboards, 75% keyboards, even 40% keyboards – and all using the legacy row-staggered layout. Some of the most popular of these enthusiast boards are Keychron Q-series ($XXX), Mode Sonnet ($XXX), XXX ($XXX). So clearly there's a huge number of users who are simply very, very attached to their existing layout. Those users who are willing to move to a 40% board, yet not try split or columnar layouts, are surely an extreme example of commitment to aesthetics over ergonomics.
+Regarding **finger-to-key assignments**, we believe that there is a large market of people who have learned to touch-type, and are scared to try to re-learn typing. This is evidenced by the vast community buying enthusiast-level TKL keyboards, 75% keyboards, even 40% keyboards – and all using the legacy row-staggered layout. Some of the more popular of these enthusiast boards are Keychron Q-series ($150), Monsgeek M1 ($99), or any of the multitude of high-end designs such as the Mode Sonnet ($300). So clearly there's a huge number of users who are simply very, very attached to their existing layout. Those users who are willing to move to a 40% board, yet not try split or columnar layouts, are surely an extreme example of commitment to aesthetics over ergonomics.
 
 So, I regard it as a design principle that we should explore the design space of keyboards with four (or three) keys per finger (1-Q-A-Z, 2-W-S-X), laid out roughly in a column, and with a fairly standard location for the Shift keys, modifiers, Space bar, and so on.
 
@@ -82,6 +82,57 @@ In conclusion, I feel that these reasonable requirements are hardly met by any c
 ## §2. Applying the three design principles
 
 ### Firstly, applying the principles to existing keyboards
+
+#### A. The full-sized, the TKL, the 75%
+
+I don't know the precise date when the full-sized fell out of favour. Certainly in 2010, there were plenty being sold, but since then, the shift to TKL, then 75% or 65% has changed the most-popular layout.
+
+Bizarrely, the world has realised that the TKL block, with its Insert keys, Print Screen, and Screen Lock, is taking up "valuable" space that should be reclaimed for the sake of a more ergonomic mouse position, but then totally fails to reform in any way the ergonomics of the actual Alphas!
+
+No matter how pretty, or advanced in their manufacturing process, I would say that all of these fail to meet the requirement, **do not make any terrible ergonomic trade-offs**.
+
+![The Mode Sonnet](./mode-sonnet.jpg)
+The [Mode Sonnet](https://modedesigns.com/products/sonnet) (Credit: Mode Designs)
+
+![The Keychron Q1](./keychron-q1.webp)
+The [Keychron Q1](https://www.keychron.com/products/keychron-q1) (Credit: Keychron)
+
+#### B. The Alice
+
+In 2018, Yuk Tsi released the TGR Alice, based on the earlier EM7 keyboard.
+
+Before this 2018 Alice, I reckon there were very, very few boards made with a design like this, possibly just a few limited production runs of boards such as the EM7.
+
+![TGR Alice](./tgr-alice.jpeg)
+The TGR Alice (Credit: yuktsi, [via GeekHack](https://geekhack.org/index.php?topic=95009.0))
+
+Of course, the TGR Alice itself was not produced in great numbers, but spawned a large number of budget knock-offs, such as Epomaker's Feker Alice 80, or Keychron's Alice boards.
+
+Why is it growing in popularity? My guess would be, because it meets _some_ of our design requirements!
+
+It _retains_ the standard finger-to-key assignments, including **standard placement** of Shift, Enter, and so on; allows for manufacture with to **no compromises on aesthetics** (CNC aluminium, standard plate-to-case mountings); and **makes a half-hearted attempt at ergonomics**, clearly placing this design goal in last place.
+
+Unfortunately, the layout turns into some kind of weird half-way set of compromises. There is massive and jarring splay for the little finger ("pinky" in American English), of 10° or up to 15° on some models, with some very unfortunate compromises on key positioning due to trying to implement this splay while using a row-staggered layout.
+
+It's a nice try, but I think we should do better.
+
+#### C. The Corne
+
+XXX
+
+#### D. The ErgoDox
+
+XXX
+
+#### E. The Dactyl
+
+XXX
+
+#### F. The Cornelius
+
+XXX
+
+#### G. The Sagittarius
 
 XXX
 
