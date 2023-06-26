@@ -6,7 +6,7 @@ In this discussion, I would like to:
 2. Show how those design requirements would influence the design of the keyboard.
 3. Set out steps to build a prototype.
 
-## 1. Why another keyboard?
+## §1. Why another keyboard?
 
 As I understand it, there are two sub-communities within the keyboard hobby: the **ergonomicists** and the
 **aesthetes**.
@@ -65,5 +65,46 @@ developed according to a set of prioritised goals, which determine which qualiti
 features... All designs involve trade-offs, explicitly or implicitly, which are resolved according to the design's
 goals.)
 
-1. The design must keep the **standard finger-to-key assignments** of a traditional keyboard.
-2. XXX
+> 1. The design must keep the **standard finger-to-key assignments** of a traditional keyboard.
+> 2. The design must appeal to aesthetics enthusiasts: we cannot compromise on features that are regarded as **bare-minimum requirements for a 75% keyboard**.
+> 3. The design must **not make any terrible ergonomic trade-offs**.
+
+Regarding **finger-to-key assignments**, we believe that there is a large market of people who have learned to touch-type, and are scared to try to re-learn typing. This is evidenced by the vast community buying enthusiast-level TKL keyboards, 75% keyboards, even 40% keyboards – and all using the legacy row-staggered layout. Some of the most popular of these enthusiast boards are Keychron Q-series ($XXX), Mode Sonnet ($XXX), XXX ($XXX). So clearly there's a huge number of users who are simply very, very attached to their existing layout. Those users who are willing to move to a 40% board, yet not try split or columnar layouts, are surely an extreme example of commitment to aesthetics over ergonomics.
+
+So, I regard it as a design principle that we should explore the design space of keyboards with four (or three) keys per finger (1-Q-A-Z, 2-W-S-X), laid out roughly in a column, and with a fairly standard location for the Shift keys, modifiers, Space bar, and so on.
+
+Regarding the **aesthetic requirements**, I have ranked these higher than the ergonomic concerns. This is because, all else being equal, if we pursue ergonomics first then we'll simply be producing a Corne clone, which is not novel, and so far hasn't conquered the custom keyboards world. We have to see how far we can go on ergonomics, _without_ compromising on the minimum bar for aesthetics that dominates the mechanical community.
+
+The **ergonomic trade-offs** are middle-of-the-road. Refusing to do anything terrible does rule out a lot of possibilities (given that most keyboards are in fact pretty terrible for ergonomics), but it doesn't compel us to pursue a mamixum-ergonomic route.
+
+In conclusion, I feel that these reasonable requirements are hardly met by any current keyboards on the market, or in past Group Buys, which justifies blessing the world with yet another keyboard design!
+
+## §2. Applying the three design principles
+
+### Firstly, applying the principles to existing keyboards
+
+XXX
+
+### Secondly, producing a design that meets the three design principles
+
+XXX
+
+## §3. Steps towards a prototype
+
+Broadly, I aim to:
+
+1. Produce myself a set of CAD files for the keyboard plate. Status: ~done, first draft.
+2. Post on GeekHack / other forums to get design feedback.
+3. Finalise concrete manufacturing plans for a limited run of concept-prototypes (~10 units, perhaps). These would consist of a bare keyboard plate, screwed to a block of wood at the front and another at the back. Offer these prototypes on a forum for review & feedback.
+4. Make design changes, propose a case design and manufacturing plan for a full unit (top+bottom case, plate, and PCB or hand-wiring plan).
+5. Run an Interest Check to poll for final feedback.
+6. Run a Group Buy to produce perhaps ~50 units (or more, but I'd be astonished if even 50 bought my keyboard).
+
+The first steps, doing some CAD and soliciting feedback, are simple, and I can certainly do them myself.
+
+From then on, it all depends on the level of interest received.
+
+* If it falls flat, then I guess I'll make a single unit with hand tools at home. I certainly wouldn't ever be able to get a CNC case (or even 3D resin-printed case).
+* If it picks up interest, and ten people would be willing to participate in a round of prototying, that would be exciting.
+
+XXX document what I have already: the CAD files
