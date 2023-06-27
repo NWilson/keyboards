@@ -11,6 +11,8 @@ In this discussion, I would like to:
 As I understand it, there are two sub-communities within the keyboard hobby: the **ergonomicists** and the
 **aesthetes**.
 
+### The two communities
+
 The **ergonomicists** are those who:
 - Reject the concept of the ridiculous, historical row-staggered layouts (of ¼, ½, and ¼ U). Why on _earth_ type on a
   keyboard that isn't even designed for the human hand?
@@ -55,10 +57,20 @@ blockquote { font-weight: bold;
 > These two keyboard communities are pursuing two separate axes of aesthetics and ergonomics.<br/>Why are there so few
 > design cross-overs between these communities? Is it really not possible to learn from both?
 
+### The gap in the market
+
 For me, this feels like a **gap of opportunity** in the market.
 
 > Why not design a "nice", aesthetic design, that _retains_ the features most-loved by aesthetes (gasket-mount, flexibly typing feel, pleasant sound profile), while
 > _incorporating_ the innovations explored by the ergonomicists?
+
+![Picture of ergonomics vs aesthetics](./keyboard-space.inkscape.svg)
+
+Here, I show some existing designs mapped onto these axes of aesthetics and ergonomics. We can see that all the best-selling "enthusiast" boards (aluminium, gasket-mounted) are on a clear axis of price versus build quality (at least, as attempted by the designers). The ergonomic scene has a mixture of designs, some extremely low-budget, designed for home-soldering and with very basic and cheap sandwich cases; while also there's a secondary market of more premium models catering for enthusiasts who are fully bought into the ergonomic model.
+
+In the centre, we see a large gap. Where are the keyboards offering an ergonomic step-up to the users, stuck on 65% boards and worrying about whether the gaskets are too soft, or the plate too firm?
+
+### Design priorities to meet this market gap
 
 I will formalise this as an attempt to pursue the following **design priorities**. (All designs are conceived and
 developed according to a set of prioritised goals, which determine which qualities should win over others: price, build,
@@ -154,13 +166,37 @@ This was influential, with subsequent developments such as the Dactyl-Manuform, 
 ![The Dactyl](./dactyl.png)
 <br/>The Dactyl (Credit: Matthew Adereth, [via GitHub](https://github.com/adereth/dactyl-keyboard))
 
-#### F. The Cornelius
+#### F. The Sagittarius
 
-XXX
+In 2020, Álvaro Volpato (Gondolindrim) released the Sagittarius, which is an **awesome** design.
 
-#### G. The Sagittarius
+They built a truly awe-inspiring attempt at a fully ergonomic Alice layout. Now, Gondolindrim made some different design choices to what I would have made, perhaps, but the dedication to this project was immense.
 
-XXX
+It combines a sophisticated anatomical model of the human hand, combined with empirical measurements, which are used to provide input to an optimisation solver that minimises hand strain for the given mechanical-anatomical model.
+
+This could really claim to be most ergonomic (or perhaps only ergonomic!) Alice layout.
+
+The most exciting thing about this project, to me, is that **almost entirely meets my own design requirements above**.
+
+* It's an Alice-style layout, so it has completely ordinary key positions. Yes, it does have row stagger rather than column stagger, but it's very deliberately laid out such that it does _not_ allow itself to be hampered by the legacy stagger spacing (¼U, ½U, ¼U).
+* The build quality is phenomenal. It truly is a keyboard aimed at the r/MechanicalKeyboards aesthetes community, not r/ErgoMechKeyboards ergonomicists.
+* The ergonomics are best-in class, with few-to-no compromises.
+
+The key inspiration of Sagittarius is showing that there really _is_ a market for a much better Alice-style board, without compromise on ergonomics or build quality. The only disappointment is that it _seems_ like the ergonomic design was mainly developed from the ground up, based on the Alice layout as its starting template, rather than collaboratively building on the insights of the ErgoMechKeyboards community and the direction they have standardised on over the last decade.
+
+![The Sagittarius](./sagittarius.webp)
+<br/>The Sagittarius (Credit: Gondolindrim, [via GeekHack](https://geekhack.org/index.php?topic=109701.0))
+
+#### G. The Cornelius
+
+In 2021, Kosuke Adachi (foostan) released a new manufacturing design for the existing Corne keyboard.
+
+Cornelius is a super-high-quality version of Corne, on a gasket-mounted plate inside a CNC-milled aluminium case.
+
+Even more so than the Sagittarius, it's an example of a very rare cross-over between the two keyboarding communities. It's a true classic of the ergonomicist scene (in fact, one of the most-copied and influential ergonomic keyboards), but released with the typing-feel of a high-end keyboard build.
+
+![The Cornelius](./cornelius.jpeg)
+<br/>The Cornelius (Credit: foostan, [via GeekHack](https://geekhack.org/index.php?topic=109741))
 
 ### Secondly, producing a design that meets the three design principles
 
@@ -184,6 +220,30 @@ From then on, it all depends on the level of interest received.
 * If it falls flat, then I guess I'll make a single unit with hand tools at home. I certainly wouldn't ever be able to get a CNC case (or even 3D resin-printed case).
 * If it picks up interest, and ten people would be willing to participate in a round of prototying, that would be exciting.
 
-XXX document what I have already: the CAD files
+### So far, I have:
+
+* Produced some CAD files for the proposed plate design. It's a single metal plate, which I'm intending to have laser-cut in 1.5mm steel.
+* The plate has separate fingers, so that it can be individually bent.
+* I have CAD designs for a set of 18 (!!) small blocks of hard steel, which can be used to very precisely bend the steel plate in a small hydraulic press. Using registration cutouts, which lock the die to the plate by slotting into the keyswitch cutouts, the bending can be done by hand by simply placing the work item into the interlocking die, and pressing. It would take 15 presses to do a single sheet, so we'd be looking at (hopefully) less than an hour of manual labour per item, once all the one-time setup and prototyping has been done.
+
+So, this is a solid plan here for a very small manufacturing run of prototypes. The laser-cut and press-bent plates can be screw-mounted onto some simple blocks of wood, to be used to hand-wire a very basic working prototype. Then I would be able to daily-drive it and assess the design.
+
+(The final design would be gasket-mounted to a wood, resin, or aluminium case, not screw-mounted!)
+
+### My next steps:
+
+* Post this design to appropriate forums, to gain feedback
+* Manufacture a cardboard prototype at home, in preparation for moving to a steel prototype
+
+### Design resources
+
+[Full set of resources on GitHub](https://github.com/NWilson/keyboards/tree/main/02-keyopatra-project/CAD%20resources)
+
+![Keyboard Layout Creator output](./keyboard-layout-creator.png)
+<br/>[Keyboard Layout Creator layout](http://www.keyboard-layout-editor.com/#/gists/44e1f45338d9528cabf2b6c0f85144a3)
+
+![SVG plate file](./CAD%20resources/Rigel%20plate.inkscape.svg)
+<br/>More detailed plate design, showing positioning of keys with stagger.
 
 <iframe width="100%" height="500" style="border:1px solid #eeeeee;" src="https://3dviewer.net/embed.html#model=https://raw.githubusercontent.com/NWilson/keyboards/main/02-keyopatra-project/CAD%20resources/Rigel%20plate.step$camera=-106.14261,-187.26347,149.48200,8.92477,42.87129,-3.94118,0.00000,-0.00000,1.00000,45.00000$cameramode=perspective$envsettings=fishermans_bastion,off$backgroundcolor=255,255,255,255$defaultcolor=200,200,200$edgesettings=on,0,0,0,1"></iframe>
+<br/>3D CAD file for the plate of the left-hand-side of the split keyboard.
