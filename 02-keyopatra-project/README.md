@@ -18,7 +18,7 @@ The **ergonomicists** are those who:
   preferring a 3D-printed split keyboard to an CNC alumimium traditional case).
 
 ![Picture of split ergo keyboards](./typical-ergo-collection.webp)
-A typical collection of ergonomic keyboards from an ergonomicist (Credit: /u/teadetime, [via r/ErgoMechKeyboards](https://www.reddit.com/r/ErgoMechKeyboards/comments/145f952/my_growing_40_collection/))
+<br/>A typical collection of ergonomic keyboards from an ergonomicist (Credit: /u/teadetime, [via r/ErgoMechKeyboards](https://www.reddit.com/r/ErgoMechKeyboards/comments/145f952/my_growing_40_collection/))
 
 The **aesthetes** are those who:
 - Follow the latest switches, keycaps, and keyboard developments.
@@ -27,7 +27,7 @@ The **aesthetes** are those who:
 - Most of the community's energy goes towards building, lubricating, CNC milling aluminium, gaskets, and so on.
 
 ![Picture of expensive traditional keyboards](./typical-aesth-collection.webp)
-A typical collection of expensive traditional keyboards from an aesthete (Credit: /u/deej_is_typing, [via r/MechanicalKeyboards](https://www.reddit.com/r/MechanicalKeyboards/comments/11wqrlc/made_a_bookshelf_for_my_keyboard_collection/))
+<br/>A typical collection of expensive traditional keyboards from an aesthete (Credit: /u/deej_is_typing, [via r/MechanicalKeyboards](https://www.reddit.com/r/MechanicalKeyboards/comments/11wqrlc/made_a_bookshelf_for_my_keyboard_collection/))
 
 These two ideals are clearly pursuing different goals, and _both_ have made significant progress in the last decade.
 
@@ -92,10 +92,10 @@ Bizarrely, the world has realised that the TKL block, with its Insert keys, Prin
 No matter how pretty, or advanced in their manufacturing process, I would say that all of these fail to meet the requirement, **do not make any terrible ergonomic trade-offs**.
 
 ![The Mode Sonnet](./mode-sonnet.jpg)
-The [Mode Sonnet](https://modedesigns.com/products/sonnet) (Credit: Mode Designs)
+<br/>The [Mode Sonnet](https://modedesigns.com/products/sonnet) (Credit: Mode Designs)
 
 ![The Keychron Q1](./keychron-q1.webp)
-The [Keychron Q1](https://www.keychron.com/products/keychron-q1) (Credit: Keychron)
+<br/>The [Keychron Q1](https://www.keychron.com/products/keychron-q1) (Credit: Keychron)
 
 #### B. The Alice
 
@@ -116,17 +116,43 @@ Unfortunately, the layout turns into some kind of weird half-way set of compromi
 
 It's a nice try, but I think we should do better.
 
-#### C. The Corne
+#### C. The ErgoDox
 
-XXX
+The ErgoDox, by Dominic Beauchamp (Dox) in 2012, was an early split columnar keyboard. Before this, there were not that many ergonomic board, with many models seeming to come from a few established companies (Maltron in the 1970s, then later Kinesis in the 1990s as well). The ErgoDox was the start of a new wave of open-source, community-led designs for ergonomic keyboards, preceded only by a limited production run of the Key64.
 
-#### D. The ErgoDox
+The ErgoDox set the standard for future ergonomic designs: split, and columnar.
 
-XXX
+According to my design principles, this deviates in a few ways. By moving the modifier keys to the thumbs, although arguably better, it doesn't maintain standard finger-to-key placements. And, it fails to incorporate many of the build-quality enhancements subsequently developed by the mechanical keyboards community.
+
+These are not _criticisms_ of the design, but simply a remark that it is pursuing different design goals to the ones set out above.
+
+Nonetheless, the ErgoDox's influence was very significant. Subsequent open-source designs are all heavily influenced by it (such as the [**Redox**](https://jeremy.hu/redox-a-new-keyboard/) by Jeremy Herve), and it has been widely commercialised as the [**ErgoDox EZ**](https://ergodox-ez.com/) and [**Moonlander**](https://www.zsa.io/moonlander/), and by other companies too (such as the keeb.io's Iris).
+
+![The Key64](./key64.webp)
+<br/>The Key64, the original community split columnar keyboard (Credit: Nestor A. Diaz, [via r/MechKeyboards](https://www.reddit.com/r/ErgoMechKeyboards/comments/exbtfz/key64_the_original_custom_libre_ergonomic_split/) and [www.key64.org on Archive.org](https://web.archive.org/web/20150610120432/http://www.key64.org/))
+
+![The ErgoDox](./ergodox.webp)
+<br/>The Ergodox (Credit: [Drop.com](https://drop.com/buy/ergodox), [via ergodox.io](https://www.ergodox.io/))
+
+#### D. The Corne
+
+The Corne, by Kosuke Adachi (foostan) in 2018, is very similar to the ErgoDox at a high level, but makes changes to the key placement and construction.
+
+The same conclusions apply as for the ErgoDox.
+
+Popular Corne derivatives are the [Lily58](https://github.com/kata0510/Lily58) (Naoki Katahira, 2018), with a little less stagger than the Corne; then the [Sofle](https://josefadamcik.github.io/SofleKeyboard/) (Josef Adamčík, 2019).
+
+![The Corne](./corne.jpg)
+<br/>The Corne (Credit: foostan, [via GitHub](https://github.com/foostan/crkbd))
 
 #### E. The Dactyl
 
-XXX
+The Dactyl, by Matthew Adereth in 2015, is a very interesting evolution of the ErgoDox. As far as I can tell, it was one of the first community-driven keyboards to really explore the idea of a convex keyboard, and in particular, uses recessed key wells for each finger individually (like the Kinesis Advantage, with the middle finger's keys deeper than the little finger's keys, unlike the earlier Maltron). This coincided with the rise of 3D printers, which is probably why it hadn't been made before.
+
+This was influential, with subsequent developments such as the Dactyl-Manuform, the [Skeletyl](https://github.com/Bastardkb/Skeletyl) (Quentin Lebastard), and more.
+
+![The Dactyl](./dactyl.png)
+<br/>The Dactyl (Credit: Matthew Adereth, [via GitHub](https://github.com/adereth/dactyl-keyboard))
 
 #### F. The Cornelius
 
@@ -160,4 +186,4 @@ From then on, it all depends on the level of interest received.
 
 XXX document what I have already: the CAD files
 
-<iframe width="100%" height="500" style="border:1px solid #eeeeee;" src="https://3dviewer.net/embed.html#model=https://raw.githubusercontent.com/NWilson/keyopatra/main/02-keyopatra-project/CAD%20resources/Rigel%20plate.step$camera=-106.14261,-187.26347,149.48200,8.92477,42.87129,-3.94118,0.00000,-0.00000,1.00000,45.00000$cameramode=perspective$envsettings=fishermans_bastion,off$backgroundcolor=255,255,255,255$defaultcolor=200,200,200$edgesettings=on,0,0,0,1"></iframe>
+<iframe width="100%" height="500" style="border:1px solid #eeeeee;" src="https://3dviewer.net/embed.html#model=https://raw.githubusercontent.com/NWilson/keyboards/main/02-keyopatra-project/CAD%20resources/Rigel%20plate.step$camera=-106.14261,-187.26347,149.48200,8.92477,42.87129,-3.94118,0.00000,-0.00000,1.00000,45.00000$cameramode=perspective$envsettings=fishermans_bastion,off$backgroundcolor=255,255,255,255$defaultcolor=200,200,200$edgesettings=on,0,0,0,1"></iframe>
