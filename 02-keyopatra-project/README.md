@@ -17,7 +17,7 @@ The **ergonomicists** are those who:
 - Reject the concept of the ridiculous, historical row-staggered layouts (of ¼, ½, and ¼ U). Why on _earth_ type on a
   keyboard that isn't even designed for the human hand?
 - Are willing to reject (or ignore) build quality concerns if those impact on the keyboard's ergonomics (for example,
-  preferring a 3D-printed split keyboard to an CNC alumimium traditional case).
+  preferring a 3D-printed split keyboard to an CNC aluminium traditional case).
 
 ![Picture of split ergo keyboards](./typical-ergo-collection.webp)
 <br/>A typical collection of ergonomic keyboards from an ergonomicist (Credit: /u/teadetime, [via r/ErgoMechKeyboards](https://www.reddit.com/r/ErgoMechKeyboards/comments/145f952/my_growing_40_collection/))
@@ -45,7 +45,7 @@ Gateron Milky Yellow Pro); acoustic foam; aluminium cases... Unbelievable ten ye
 pre-built was a creaky ABS case with soldered-on Cherry MX Browns.
 
 The _ergonomicists_ also forged ahead, taking inspiration from classics like the Kinesis Advantage (2002) or Maltron
-(1970s). With cheap 3D printers available everywhere, custom designs profilerated. Two leading families are the Corne
+(1970s). With cheap 3D printers available everywhere, custom designs proliferated. Two leading families are the Corne
 and Ergodox, with most ergonomic keyboards now claiming inspiration from these, or one of their descendents.
 
 <style>
@@ -87,7 +87,7 @@ So, I regard it as a design principle that we should explore the design space of
 
 Regarding the **aesthetic requirements**, I have ranked these higher than the ergonomic concerns. This is because, all else being equal, if we pursue ergonomics first then we'll simply be producing a Corne clone, which is not novel, and so far hasn't conquered the custom keyboards world. We have to see how far we can go on ergonomics, _without_ compromising on the minimum bar for aesthetics that dominates the mechanical community.
 
-The **ergonomic trade-offs** are middle-of-the-road. Refusing to do anything terrible does rule out a lot of possibilities (given that most keyboards are in fact pretty terrible for ergonomics), but it doesn't compel us to pursue a mamixum-ergonomic route.
+The **ergonomic trade-offs** are middle-of-the-road. Refusing to do anything terrible does rule out a lot of possibilities (given that most keyboards are in fact pretty terrible for ergonomics), but it doesn't compel us to pursue a maximum-ergonomic route.
 
 In conclusion, I feel that these reasonable requirements are hardly met by any current keyboards on the market, or in past Group Buys, which justifies blessing the world with yet another keyboard design!
 
@@ -218,7 +218,7 @@ The first steps, doing some CAD and soliciting feedback, are simple, and I can c
 From then on, it all depends on the level of interest received.
 
 * If it falls flat, then I guess I'll make a single unit with hand tools at home. I certainly wouldn't ever be able to get a CNC case (or even 3D resin-printed case).
-* If it picks up interest, and ten people would be willing to participate in a round of prototying, that would be exciting.
+* If it picks up interest, and ten people would be willing to participate in a round of prototyping, that would be exciting.
 
 ### So far, I have:
 
@@ -244,6 +244,9 @@ So, this is a solid plan here for a very small manufacturing run of prototypes. 
 
 ![SVG plate file](./CAD%20resources/Rigel%20plate.inkscape.svg)
 <br/>More detailed plate design, showing positioning of keys with stagger.
+
+![Plate cross-section](./CAD%20resources/Rigel%20plate%20technical%20profile.svg)
+<br/>Technical drawing of the plate cross-section.
 
 <iframe width="100%" height="500" style="border:1px solid #eeeeee;" src="https://3dviewer.net/embed.html#model=https://raw.githubusercontent.com/NWilson/keyboards/main/02-keyopatra-project/CAD%20resources/Rigel%20plate.step$camera=-106.14261,-187.26347,149.48200,8.92477,42.87129,-3.94118,0.00000,-0.00000,1.00000,45.00000$cameramode=perspective$envsettings=fishermans_bastion,off$backgroundcolor=255,255,255,255$defaultcolor=200,200,200$edgesettings=on,0,0,0,1"></iframe>
 <br/>3D CAD file for the plate of the left-hand-side of the split keyboard.
