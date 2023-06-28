@@ -11,7 +11,7 @@ In this discussion, I would like to:
 As I understand it, there are two sub-communities within the keyboard hobby: the **ergonomicists** and the
 **aesthetes**.
 
-### The two communities
+### §1.1. The two communities
 
 The **ergonomicists** are those who:
 - Reject the concept of the ridiculous, historical row-staggered layouts (of ¼, ½, and ¼ U). Why on _earth_ type on a
@@ -49,7 +49,7 @@ The _ergonomicists_ also forged ahead, taking inspiration from classics like the
 and Ergodox, with most ergonomic keyboards now claiming inspiration from these, or one of their descendents.
 
 <style>
-blockquote { font-weight: bold; 
+blockquote { font-weight: bold;
 /* border-left: 10px solid grey; padding-left: 10px */
  }
 </style>
@@ -57,7 +57,7 @@ blockquote { font-weight: bold;
 > These two keyboard communities are pursuing two separate axes of aesthetics and ergonomics.<br/>Why are there so few
 > design cross-overs between these communities? Is it really not possible to learn from both?
 
-### The gap in the market
+### §1.2. The gap in the market
 
 For me, this feels like a **gap of opportunity** in the market.
 
@@ -70,7 +70,7 @@ Here, I show some existing designs mapped onto these axes of aesthetics and ergo
 
 In the centre, we see a large gap. Where are the keyboards offering an ergonomic step-up to the users, stuck on 65% boards and worrying about whether the gaskets are too soft, or the plate too firm?
 
-### Design priorities to meet this market gap
+### §1.3. Design priorities to meet this market gap
 
 I will formalise this as an attempt to pursue the following **design priorities**. (All designs are conceived and
 developed according to a set of prioritised goals, which determine which qualities should win over others: price, build,
@@ -93,7 +93,7 @@ In conclusion, I feel that these reasonable requirements are hardly met by any c
 
 ## §2. Applying the three design principles
 
-### Firstly, applying the principles to existing keyboards
+### §2.1. Firstly, applying the principles to existing keyboards
 
 #### A. The full-sized, the TKL, the 75%
 
@@ -198,9 +198,33 @@ Even more so than the Sagittarius, it's an example of a very rare cross-over bet
 ![The Cornelius](./cornelius.jpeg)
 <br/>The Cornelius (Credit: foostan, [via GeekHack](https://geekhack.org/index.php?topic=109741))
 
-### Secondly, producing a design that meets the three design principles
+### §2.2. Secondly, producing a design that meets the three design principles
 
-XXX
+The tasks which most-shape the keyboard are the choice of key layout, and the physical/spatial positioning of those keys.
+
+We start with the basic presupposition that:
+
+- Our requirements force us towards having a standard QWERTY layout (or in my case, Dvorak layout, but it makes no difference, it's just a different labelling of the Alphas).
+- We are basically committed to having a columnar layout, because according to my interpretation of the design requirement "do not make any terrible ergonomic decisions", any design with row stagger is "terrible".
+  - Ortholinear (that is, no row stagger nor column stagger) is _acceptable_ but would be very surprising. If you're attempting to target ergonomics to any degree, it would be an astonishing process that landed on this layout, which, at a first glance, does not apperently resemble the dimensions of the human hand at all.
+  - We can basically rule out ortholinear immediately, and expect to design something with column stagger.
+  - Similarly, an un-split layout would be surprising. Whether or not it's a uni-body, or instead has split halves, we should expect our "mid-ergonomic" goals (not terrible, but not all-in) will lead us to some kind of split between the hands.
+
+> I'm going to call this the "Elspeth" layout. The "Alice" layout uses a ladies' name to describe the popular split-but-row-staggered layout.
+>
+> Let's give the name "Elspeth" to a "columnar Alice" layout.
+
+XXX diagram of the following:
+  - row stagger
+  - splay + column stagger (Y-dimensional)
+  - column recess (Z-dimensional)
+  - concavity
+
+![Splay and stagger](./parameters-stagger.inkscape.svg)
+
+XXX discussion of plate geometry trade-offs
+
+XXX form-factor - variable split geometry & tenting
 
 ## §3. Steps towards a prototype
 
@@ -220,7 +244,7 @@ From then on, it all depends on the level of interest received.
 * If it falls flat, then I guess I'll make a single unit with hand tools at home. I certainly wouldn't ever be able to get a CNC case (or even 3D resin-printed case).
 * If it picks up interest, and ten people would be willing to participate in a round of prototyping, that would be exciting.
 
-### So far, I have:
+### §3.1. So far, I have:
 
 * Produced some CAD files for the proposed plate design. It's a single metal plate, which I'm intending to have laser-cut in 1.5mm steel.
 * The plate has separate fingers, so that it can be individually bent.
@@ -230,12 +254,12 @@ So, this is a solid plan here for a very small manufacturing run of prototypes. 
 
 (The final design would be gasket-mounted to a wood, resin, or aluminium case, not screw-mounted!)
 
-### My next steps:
+### §3.2. My next steps:
 
 * Post this design to appropriate forums, to gain feedback
 * Manufacture a cardboard prototype at home, in preparation for moving to a steel prototype
 
-### Design resources
+### §3.3. Design resources
 
 [Full set of resources on GitHub](https://github.com/NWilson/keyboards/tree/main/02-keyopatra-project/CAD%20resources)
 
@@ -250,3 +274,30 @@ So, this is a solid plan here for a very small manufacturing run of prototypes. 
 
 <iframe width="100%" height="500" style="border:1px solid #eeeeee;" src="https://3dviewer.net/embed.html#model=https://raw.githubusercontent.com/NWilson/keyboards/main/02-keyopatra-project/CAD%20resources/Rigel%20plate.step$camera=-106.14261,-187.26347,149.48200,8.92477,42.87129,-3.94118,0.00000,-0.00000,1.00000,45.00000$cameramode=perspective$envsettings=fishermans_bastion,off$backgroundcolor=255,255,255,255$defaultcolor=200,200,200$edgesettings=on,0,0,0,1"></iframe>
 <br/>3D CAD file for the plate of the left-hand-side of the split keyboard.
+
+
+### §3.4. Attic / work-in-progress
+
+Case design
+
+- major choice is between resin (SLA print), wood (CNC), or aluminium (CNC).
+- assuming a two-piece case with screws to hold together, and slot in between to hold gasket-mounted plate.
+- The interior surface of the case is uncontroversial, it's just a rectangular hollow interior underneath the keyboard the plate. Interior space to hold a microcontroller and a sheet of poron
+- The exterior surface of the case is "just" a matter of doing a bit of lofting/shaping of the profile to make it just a _little_ bit nicer than a cuboid box
+
+Tenting system
+
+- want to support docked units with little-to-no tenting
+  - with/without splay
+  - with forwards/backwards tilt
+  - want front and rear attachment points
+  - short and long single legs
+    - simple: it's a leg, it just rotates and locks
+  - short and long T legs
+    - yikes, three-way axis support needed!
+    - OK, so need a two-axis fastening to the board
+    - and the connecting rod will allow a short or long single leg to be attached. simples!
+- want to support undocked units with larger amount of tenting
+  - base-plate system?
+  - or leg-based system?
+  - use a single universal locking nut in the centre, for compatibility with tripod/chair mounting
