@@ -159,7 +159,7 @@ Popular Corne derivatives are the [Lily58](https://github.com/kata0510/Lily58) (
 
 #### E. The Dactyl
 
-The Dactyl, by Matthew Adereth in 2015, is a very interesting evolution of the ErgoDox. As far as I can tell, it was one of the first community-driven keyboards to really explore the idea of a convex keyboard, and in particular, uses recessed key wells for each finger individually (like the Kinesis Advantage, with the middle finger's keys deeper than the little finger's keys, unlike the earlier Maltron). This coincided with the rise of 3D printers, which is probably why it hadn't been made before.
+The Dactyl, by Matthew Adereth in 2015, is a very interesting evolution of the ErgoDox. As far as I can tell, it was one of the first community-driven keyboards to really explore the idea of a concave keyboard, and in particular, uses recessed key wells for each finger individually (like the Kinesis Advantage, with the middle finger's keys deeper than the little finger's keys, unlike the earlier Maltron). This coincided with the rise of 3D printers, which is probably why it hadn't been made before.
 
 This was influential, with subsequent developments such as the Dactyl-Manuform, the [Skeletyl](https://github.com/Bastardkb/Skeletyl) (Quentin Lebastard), and more.
 
@@ -214,17 +214,108 @@ We start with the basic presupposition that:
 >
 > Let's give the name "Elspeth" to a "columnar Alice" layout.
 
-XXX diagram of the following:
-  - row stagger
-  - splay + column stagger (Y-dimensional)
-  - column recess (Z-dimensional)
-  - concavity
+#### §2.2.1. Our keyboard layout
 
-![Splay and stagger](./parameters-stagger.inkscape.svg)
+So, our task is to design an "Elspeth" layout, according to the design goals.
 
-XXX discussion of plate geometry trade-offs
+At this point, we're committed to maintaining the standard key assignments, so we don't have many choices in the overall grid that the keys are being laid out on.
 
-XXX form-factor - variable split geometry & tenting
+One issue is **monoblock or split**. I think we can resolve this quite quickly and easily: a split keyboard is more flexible, in that you can adjust the angle of the two hands according to your preference. A monoblock Alice/Elspeth layout does work, given that a 20–30° angle between the sides is adequate for most people, but nonetheless, choosing a monoblock is artificially restrictive. So, I am planning a **split layout** to begin with.
+
+Just for completeness, I'll throw in a separate numpad too, so it's a three-way split layout. I quite like my "southpaw" (positioned on the left) dedicated numpad!
+
+So, it's an **1800 layout**, with a **three-way split**. I personally prefer the 1800 layout (stepped arrow keys) compared to a 96% layout, but there's really no principled reason I can think of to decide between them, it's just a preference, so I'm going with my preference on a snap decision.
+
+As for why I chose an F-row (96% or 75% over 65%) that's just because of  the desire to maintain the standard key layout as much as possible. And, the decision to go with a 96% rather than 100% (or 75% rather than 80%, i.e. the choice of layout for the Home/End block), that's determined by: a) fashion, the growing consensus that the Home/End block is too wide and that the Insert key is superfluous; and b) the fact that it's just too wide on a split keyboard.
+
+So, with that all decided, here is the layout:
+
+![Keyboard Layout Editor output](./keyboard-layout-creator.png)
+<br/>[Keyboard Layout Editor layout](http://www.keyboard-layout-editor.com/#/gists/44e1f45338d9528cabf2b6c0f85144a3)
+
+#### §2.2.2. Our layout's physical positioning
+
+Next, we need to determine the actual physical/spatial positioning of those keys. Although they are broadly laid out as shown in the grid, each key's position can be budged by a few millimetres for improved ergonomics.
+
+These are the parameters that describe a keyboard's spatial layout:
+
+![Row stagger](./parameters-row-stagger.inkscape.svg)
+<br/>On a row-staggered keyboard (which we've rejected as a design) the **stagger** is the left-right distance between two rows. It is a per-row parameter. Row stagger is overwhelmingly common in the world of standard keyboards.
+
+![Splay and stagger](./parameters-col-stagger.inkscape.svg)
+<br/>On a columnar keyboard, the **stagger** is the forwards-backwards distance between columns (a per-column parameter). The **splay** is the angle between adjacent columns. A keyboard with no stagger or splay is called **ortholinear**. Splay is a fairly rare feature, with most keyboards, even ergonomic ones, opting for no splay, but a few designs (such as [KLOR](https://github.com/GEIGEIGEIST/KLOR)) even feature quite a large splay for the little or ring fingers.
+
+![Recess](./parameters-recess.inkscape.svg)
+<br/>A keyboard can also have a column **recess**, which is the up-down distance between columns. Recess is fairly rare, even in the ergonomic community, with most ergonomic columnar boards (such as Corne) laying out the keys on a flat plane.
+
+![Concavity](./parameters-col-concavity.inkscape.svg)
+<br/>Finally, concavity is a per-row parameter describing the curve of the keyboard's plate along each column. A concave keyboard can be cylindrical, or ever spherical in its concavity. When a design goes as far as adding concavity, it is always accompanied by column stagger and recessed columns as well, so that each finger is moving along its most natural curve.
+
+It turns out that some of these parameters are mutually exclusive according to the construction technique chosen.
+
+* **If you have a flat plate**, then clearly you can have stagger, and even splay (rare), but recess and concavity are impossible.
+* **If you have a 3D-printed plate** (or injection-moulded), then any shape is possible... but the typing feel will be altered, and some would say, compromised. When the plate is shaped plastic, you won't get the same feel and sound as a metal or polycarbonate plate that's gasket-mounted. The examples here are either moulded commercial projects (such as Kinesis Advantage), or small-volume enthusiast keyboards (such as the Dactyl, and its descendents the "dactyls"). The knock-ons for PCB design (or hand-wiring) are significant as well.
+* **If you have a shaped metal plate**, then you'll be stuck with either hand-wiring, or a flexible non-FR4 PCB. This implies that the plate isn't getting any support from the PCB, so those super-flexy polycarbonate plates aren't going to work. This is the opposite of a "half-plate" keyboard, which exists on the axis of Brass ↔ Aluminium ↔ Polycarbonate ↔ Nothing, where the plate is non-existent and it's just the FR4 PCB providing support. But when the plate is curved, forcing a PCB-less design, then you forcibly need a stiffer plate. Remember that on a traditional keyboard with aluminium plate and FR4 PCB, the switches hold the two together in a sandwich, like a truss bridge. When the PCB is gone, you need something stiffer than a polycarbonate plate.
+<br/>![Truss bridge](./keyboard-truss.inkscape.svg)
+* Finally, **if you have a solid metal plate**... then you probably blew your budget! I can't imagine anyone would end up CNC-milling a block of metal to make a complicated plate geometry.
+
+Sub-dividing, within the design space of shaped metal plates, we have **rolled plates** (sheet of metal, bent into a smooth curve on a roller), **brake-bent plates** (square sheet of metal, folded along fold lines), **split plates** (just cut the plate into strips or pieces, and gasket-mount each separately, avoiding the need for a bend), and **compound bent plates** (where the bend lines don't go all the way across the sheet, such as die-bent).
+<br/>![Sheet forming systems](./sheet-forming.inkscape.svg)
+
+Again, there are trade-offs here too. Just as a single planar sheet doesn't allow for concavity or recess, then if you use a brake-bent sheet for concavity, you won't be able to achieve any column stagger!
+
+So the trade-off is between build complexity (and cost), against ergonomic benefits. This is even assuming that using a sprung sheet even offers any improvement over a 3D-printed hull (a dactyl)!
+
+After experimenting with my own fingers, I feel that it's really quite hard to give up column stagger. I wouldn't say that there's _no_ benefit to a columnar layout without stagger (compared to a row-staggered layout), but I do feel that if you move to a columnar layout, you should expect to incorporate at least a little stagger, to capitalise on the gains. There's just such a great disparity between the length of the middle finger and little finger, that something needs to be done to accommodate it.
+
+So we narrow it down to these construction options:
+
+* A flat sheet, with column stagger. This is basically a Corne, but with a conventional R4 layout (spacebar row). Corne + Alice-spacebar-row can be built on a flat sheet. Any amount of splay is possible too.
+* Introducing a recessed middle-finger-column would require using a split plate (separate plate of its own for the recessed column), or else doing some bending of the sheet. To me, this seems to offer little usefulness. I haven't done a proper ergonomic test of the benefits of the recessed column, but I believe the gains to be marginal.
+* Finally, a compound-bent sheet allows for concavity. Here, the benefits seem more profound, and you actually capitalise on the cost of the bent sheet with some real gains.
+
+It may be a very foolish move, but I really am tempted to target my design right at the limits of what's possible.
+
+> So! I announce: Rigel96, a columnar, concave split keyboard!
+
+![SVG plate file](./CAD%20resources/Rigel%20plate.inkscape.svg)
+<br/>More detailed plate design, showing positioning of keys with stagger.
+
+| Design parameter | Value |
+| ---------------- | ----- |
+| Column splay | Based one some measurements of my hand, I'm going to prototype with 4° splay between little finger and ring finger, and 1° splay ring to middle. This isn't critical, but it just brings the 'Q' key a little closer in reach, and avoids about 1-2mm of stretch to the Tab key. It's hard to be sure (without any ergonomics training myself) exactly what the natural bending of the little finger is, but I'm willing to experiment with a little bit of splay to see. |
+| Column stagger | A lot of design seems to go into this, between all the different Corne-alikes! This [incredible tool (compare.splitkb.com)](https://compare.splitkb.com/) by [John Helveston](https://github.com/jhelvy/splitKbCompare) allows comparing. Corne is pretty gentle, Lily58 even more gentle, while Sofle V2 increases the stagger (which Josef Adamčík explains [in this blog post](https://josef-adamcik.cz/electronics/soflekeyboard-evolving.html)), and Atreus has the most extreme stagger. <br/>I measured my fingers and attempted to gauge their natural finger positions, and found that the Corne really does seem to offer a good balance. <br/>I'm using these as my initial staggers for prototyping: <br/>G-col to F-col: +1.5mm <br/>F-col to D-col: +2.5mm <br/>D-col to S-col: -2.5mm <br/>S-col to A-col: -4.5mm |
+| Column recess | Why is this so rare? Well, because most hobbyist split columnar boards use flat plate. It actually _is_ common on dactyls. I found that there's no benefit to recessing the G-column (first finger needs to be able to move easily from 'G' to 'F'); that there is some benefit to recessing the D-column; that 'F' and 'S' sit very naturally on a plane; and that recessing the A-column and Tab column upwards is a right pain for the process of bending. <br/>I'm therefore using a 3mm D-column recess. |
+| Column concavity | As discussed below, I chose: <br/>Row-4 to row-3 plate angle of 13° <br/>Row-3 to row 2 plate angle of 0° <br/>Row-2 to row 1 plate angle of 16° |
+
+The final complicating factor in the the design is the **keycaps** themselves and their **keycap profile**. For the concavity, a finger length of 75mm (my index finger) implies that a 19mm keycap subtends an angle of 15°, which is based on placing that 19mm keycap on the circumference of a circle of radius 75mm.
+
+However, the hitting surface of the keycap may be _already angled_, plus, popular keycap profiles like MT3 or SA are perilously close to colliding (or actually colliding) if angled at 15°.
+
+> What keycap profile is appropriate for a concave plate?
+>
+> How much concavity can we have, and how much do we need?
+
+If we target the 15° concavity that's used by most Dactyl and Dactly-Manuform derivatives (and which matches my 75mm index finger), then we realise that this won't work for all keycaps profiles.
+
+![...](./CAD%20resources/Rigel%20profile.inkscape.svg)
+
+* For Cherry, it's simply very sub-optimal. I've seen some incredible work [on the Tryadactyl](https://github.com/wolfwood/tryadactyl) which uses some super-complex geometry for the plate to make Cherry work. But it's a totally over-fitted design in the sense that it will then _only_ work for Cherry, and the tolerances are very tight, and I simply don't think it would be possible to do by sheet metal bending.
+* For SA and MT3, it's too tall, really. I measured the row-to-row concavity on the [Bastardkb Charybdis](https://github.com/Bastardkb/Charybdis/blob/main/files/3x5%20nano/charybdisnano_v2_v187.stl) and found it was pretty much exactly 15° again, and Quentin claims that MT3 will work, but it must be pretty tight (or has he fractionally increased the key-to-key spacing from 19.05mm?). I have an MT3 set, and I feel the collision risk is getting quite high.
+* But [MTNU](https://matt3o.com/mtnu-pre-order-phase-starts-now/) by Matteo Spinelli (Matt3o) works really well! The hitting surface is pretty much as large as you can get without getting interference. The R2-to-R3 angle is already 15° at the keycap top surface, so to achieve the correct angle for the next rows you don't need so much.
+
+> I will design Rigel96 specifically to be optimised for the MTNU profile (even though I don't even have a set yet).
+
+This gives:
+<br/>R4-to-R3 plate angle of 13°
+<br/>R3-to-R2 plate angle of 0° (but the keycap tops still have their concave angle)
+<br/>R2-to-R1 plate angle of 16°
+
+![Plate cross-section](./CAD%20resources/Rigel%20plate%20technical%20profile.svg)
+<br/>Technical drawing of the plate cross-section.
+
+<iframe width="100%" height="500" style="border:1px solid #eeeeee;" src="https://3dviewer.net/embed.html#model=https://raw.githubusercontent.com/NWilson/keyboards/main/02-keyopatra-project/CAD%20resources/Rigel%20plate.step$camera=-106.14261,-187.26347,149.48200,8.92477,42.87129,-3.94118,0.00000,-0.00000,1.00000,45.00000$cameramode=perspective$envsettings=fishermans_bastion,off$backgroundcolor=255,255,255,255$defaultcolor=200,200,200$edgesettings=on,0,0,0,1"></iframe>
+<br/>3D CAD file for the plate of the left-hand-side of the split keyboard.
 
 ## §3. Steps towards a prototype
 
@@ -262,19 +353,6 @@ So, this is a solid plan here for a very small manufacturing run of prototypes. 
 ### §3.3. Design resources
 
 [Full set of resources on GitHub](https://github.com/NWilson/keyboards/tree/main/02-keyopatra-project/CAD%20resources)
-
-![Keyboard Layout Creator output](./keyboard-layout-creator.png)
-<br/>[Keyboard Layout Creator layout](http://www.keyboard-layout-editor.com/#/gists/44e1f45338d9528cabf2b6c0f85144a3)
-
-![SVG plate file](./CAD%20resources/Rigel%20plate.inkscape.svg)
-<br/>More detailed plate design, showing positioning of keys with stagger.
-
-![Plate cross-section](./CAD%20resources/Rigel%20plate%20technical%20profile.svg)
-<br/>Technical drawing of the plate cross-section.
-
-<iframe width="100%" height="500" style="border:1px solid #eeeeee;" src="https://3dviewer.net/embed.html#model=https://raw.githubusercontent.com/NWilson/keyboards/main/02-keyopatra-project/CAD%20resources/Rigel%20plate.step$camera=-106.14261,-187.26347,149.48200,8.92477,42.87129,-3.94118,0.00000,-0.00000,1.00000,45.00000$cameramode=perspective$envsettings=fishermans_bastion,off$backgroundcolor=255,255,255,255$defaultcolor=200,200,200$edgesettings=on,0,0,0,1"></iframe>
-<br/>3D CAD file for the plate of the left-hand-side of the split keyboard.
-
 
 ### §3.4. Attic / work-in-progress
 
