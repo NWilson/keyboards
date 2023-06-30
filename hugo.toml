@@ -1,0 +1,18 @@
+baseURL = 'http://keyboards.nicholaswilson.me.uk/'
+languageCode = 'en-gb'
+title = "Nick's keyboard resources"
+theme = "book"
+
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    disable = true
+  [privacy.instagram]
+    disable = true
+  [privacy.twitter]
+    disable = true
+  [privacy.vimeo]
+    disable = true
+  [privacy.youtube]
+    disable = true
