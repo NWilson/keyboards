@@ -16,3 +16,19 @@ theme = "book"
     disable = true
   [privacy.youtube]
     disable = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.parser]
+      autoHeadingID = true
+      autoHeadingIDType = 'github'
+      wrapStandAloneImageWithinParagraph = true
+      [markup.goldmark.parser.attribute]
+        block = true
+        title = true
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+  BookSection = '*'
+  BookSearch = false

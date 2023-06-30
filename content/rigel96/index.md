@@ -1,3 +1,9 @@
++++
+date = '2023-06-30'
+title = 'Rigel96: a mid-ergonomic, split, columnar keyboard'
+weight = 20
++++
+
 # Rigel96: a mid-ergonomic, split, columnar keyboard
 
 In this discussion, I would like to:

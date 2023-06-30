@@ -1,3 +1,9 @@
++++
+date = '2023-06-15'
+title = "Nick's keyboard guide for total beginners"
+weight = 10
++++
+
 # Nick's keyboard guide for total beginners
 
 <center>
